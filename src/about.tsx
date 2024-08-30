@@ -25,7 +25,7 @@ const About: React.FC = () => {
                 <FaGraduationCap className="mr-2 text-purple-500" /> Matric
               </li>
               <li className="mb-2 flex items-center">
-                <FaGithub className="mr-2 text-purple-500" /> <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">github.com/your-github-username</a>
+                <FaGithub className="mr-2 text-purple-500" /> <a href="https://github.com/Sihle1996" target="_blank" rel="noopener noreferrer">github.com/sihle1996</a>
               </li>
             </ul>
           </div>
