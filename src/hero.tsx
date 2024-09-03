@@ -1,10 +1,14 @@
+import React from "react";
 import { Typewriter } from 'react-simple-typewriter';
+import useVisibility from './useVisibility'; // Import the custom hook
 
-const Hero = () => {
+const Hero: React.FC = () => {
+  const [ref, isVisible] = useVisibility();
+
   return (
     <section className="bg-gray-900 text-white py-20">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
-        <div className="md:w-1/2">
+        <div ref={ref} className={`md:w-1/2 slide-fade-in ${isVisible ? 'visible' : ''}`}>
           <h1 className="text-5xl font-bold mb-4">
             <span style={{ color: 'white' }}>
               Hello, I'm{' '}
@@ -29,10 +33,9 @@ const Hero = () => {
               ]}
               loop={0} // Infinite looping
               typeSpeed={50}
-              deleteSpeed={40}
-              delaySpeed={1000}
+              deleteSpeed={30}
               cursor
-              cursorStyle="_"
+              cursorStyle="|"
             />
           </p>
           <a

@@ -1,11 +1,9 @@
 import About from "./about";
 import Header from "./header";
 import Hero from "./hero";
-
-
 import Layout from "./layout";
-import Services from "./services";
-
+import Projects from "./projects";
+import Skills from "./skills";
 
 const App: React.FC = () => {
   return (
@@ -13,7 +11,8 @@ const App: React.FC = () => {
       <Header />
       <Hero />
       <About />
-      <Services />
+      <Skills />
+      <Projects />
     </Layout>
   );
 };

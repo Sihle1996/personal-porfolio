@@ -1,4 +1,6 @@
 import React from "react";
+import './Header.css'; // Import custom CSS file for animations
+
 
 const Header: React.FC = () => {
   return (
@@ -7,11 +9,22 @@ const Header: React.FC = () => {
         <div className="text-xl font-bold text-purple-500">Portfolio</div>
         <nav>
           <ul className="flex space-x-4">
-            <li><a href="#" className="hover:text-purple-500">Home</a></li>
-            <li><a href="#" className="hover:text-purple-500">About</a></li>
-            <li><a href="#" className="hover:text-purple-500">Services</a></li>
-            <li><a href="#" className="hover:text-purple-500">Portfolio</a></li>
-            <li><a href="#" className="hover:text-purple-500">Contact</a></li>
+            <li className="relative">
+              <a href="#home" className="text-white hover:text-purple-500">Home</a>
+              <div className="underline-animation"></div>
+            </li>
+            <li className="relative">
+              <a href="#about" className="text-white hover:text-purple-500">About</a>
+              <div className="underline-animation"></div>
+            </li>
+            <li className="relative">
+              <a href="#skills" className="text-white hover:text-purple-500">Skills</a>
+              <div className="underline-animation"></div>
+            </li>
+            <li className="relative">
+              <a href="#projects" className="text-white hover:text-purple-500">Projects</a>
+              <div className="underline-animation"></div>
+            </li>
           </ul>
         </nav>
       </div>
